@@ -1,0 +1,15 @@
+public class RegularPizza extends Pizza
+{
+	public RegularPizza(String size,String [] toppings)
+	{
+		super(size,toppings);
+	}
+	@Override
+	public String displayInfo()
+	{
+		System.out.print("This is Regular pizza\n");
+		return super.displayInfo();
+		
+	}
+	
+}

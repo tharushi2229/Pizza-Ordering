@@ -1,0 +1,23 @@
+public class SpecialPizza extends Pizza
+{
+    private String specialSauce;
+    public SpecialPizza(String size,String []topping,String specialSauce)
+    {
+        super(size,topping);
+        this.specialSauce=specialSauce;
+    }
+    public String getSpecialSauce()
+    {
+        return this.specialSauce;
+    }
+
+    @Override
+    public String displayInfo()
+    {
+		System.out.print("This is Special pizza\n");
+        System.out.println("special sauce - "+getSpecialSauce());
+		
+		return super.displayInfo();
+    }
+
+}
